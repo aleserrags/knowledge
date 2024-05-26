@@ -1,15 +1,17 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout/base.html.twig' %}
 
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="card border-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Basic Table
+        </h5>
+    </div>
+    <div class="card-body">
+        <h1>Hello {{ controller_name }}! ✅</h1>
     <button data-controller="tooltip" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
     Tooltip on top
     </button>
@@ -19,5 +21,9 @@
         <li>Your controller at <code>/home/alexandre/projetos/pessoal/knowledge/src/Controller/Web/Home/HomeController.php</code></li>
         <li>Your template at <code>/home/alexandre/projetos/pessoal/knowledge/templates/web/home/home/index.html.twig</code></li>
     </ul>
+    </div>
 </div>
+
 {% endblock %}
+
+

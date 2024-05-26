@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('libs/bootstrap/bootstrap.min.css') }}">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+
+<body>
+    <div class="wrapper">
+
+        {% include 'layout/_sidebar.html.twig' %}
+
+        <div class="main">
+
+            {% include 'layout/_navbar.html.twig' %}
+
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4>Admin Dashboard</h4>
+                    </div>
+
+                    {% block body %}{% endblock %}
+                    
+                </div>
+            </main>
+            {% include 'layout/_theme_toggle.html.twig' %}
+            {% include 'layout/_footer.html.twig' %}
+        </div>
+    </div>
+    <script src="{{ asset('libs/bootstrap/bootstrap.bundle.min.js') }}"></script>
+</body>
+
+</html>
