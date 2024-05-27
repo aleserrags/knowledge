@@ -1,9 +1,9 @@
 import { Controller } from '@hotwired/stimulus';
-import * as bootstrap from 'bootstrap';
+import { Tooltip } from 'bootstrap';
 
 /* stimulusFetch: 'lazy' */
 export default class extends Controller {
     connect() {
-        new bootstrap.Tooltip(this.element)
+        new Tooltip(this.element)
     }
 }
