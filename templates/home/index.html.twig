@@ -1,6 +1,6 @@
 {% extends 'layout/base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Home | Knowledge!{% endblock %}
 
 {% block body %}
 
@@ -11,16 +11,13 @@
         </h5>
     </div>
     <div class="card-body">
-        <h1>Hello {{ controller_name }}! ✅</h1>
-    <button data-controller="tooltip" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-    Tooltip on top
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testeId">
+    Launch demo modal
     </button>
-    
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/home/alexandre/projetos/pessoal/knowledge/src/Controller/Web/Home/HomeController.php</code></li>
-        <li>Your template at <code>/home/alexandre/projetos/pessoal/knowledge/templates/web/home/home/index.html.twig</code></li>
-    </ul>
+        <twig:Bootstrap:Modal:ModalXL titulo="Teste Titulo" id="testeId"> 
+            <h3>Conteudo do Modal</h3>
+
+        </twig:Bootstrap:Modal:ModalXL>
     </div>
 </div>
 
