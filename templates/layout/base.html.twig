@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block tituloHead %}Knowledge!{% endblock %}</title>
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
@@ -27,10 +27,10 @@
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h4>Admin Dashboard</h4>
+                        <h4>{% block tituloBody %}{% endblock %}</h4>
                     </div>
 
-                    {% block body %}{% endblock %}
+                    {% block conteudo %}{% endblock %}
                     
                 </div>
             </main>

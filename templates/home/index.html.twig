@@ -1,25 +1,21 @@
 {% extends 'layout/base.html.twig' %}
 
-{% block title %}Home | Knowledge!{% endblock %}
+{% block tituloHead %}Home | Knowledge!{% endblock %}
 
-{% block body %}
+{% block tituloBody %} Home {% endblock %}
 
+{% block conteudo %}
 <div class="card border-0">
-    <div class="card-header">
-        <h5 class="card-title">
-            Basic Table
-        </h5>
-    </div>
-    <div class="card-body">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testeId">
-    Launch demo modal
-    </button>
-        <twig:Bootstrap:Modal:ModalXL titulo="Teste Titulo" id="testeId"> 
-            <h3>Conteudo do Modal</h3>
 
-        </twig:Bootstrap:Modal:ModalXL>
-    </div>
-</div>
+    {# <div class="card-header">
+        <h5 class="card-title">
+            Home
+        </h5>
+    </div> <!-- ./card-header --> #}
+    <div class="card-body d-flex justify-content-center align-items-center">
+        <img src="{{ asset('img/knowledge_icon.png') }}" alt="" class="img-fluid">
+    </div> <!-- ./card-body -->
+</div> <!-- ./card -->
 
 {% endblock %}
 
