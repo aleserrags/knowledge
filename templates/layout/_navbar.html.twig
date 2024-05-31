@@ -8,8 +8,14 @@
                 <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
                     <img src="{{ asset('img/img_default_user.png') }}" class="avatar rounded" alt="" />
                 </a>
+            
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#" class="dropdown-item">Sair</a>
+                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#testeId">
+                        <i class="bi bi-gear-fill"></i> Administração
+                    </button>
+                    <a href="#" class="dropdown-item">
+                        <i class="bi bi-door-open-fill"></i> Sair
+                    </a>
                 </div>
             </li>
         </ul>
